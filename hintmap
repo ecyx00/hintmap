@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+# launcher: the code lives in hintmap.py so Python caches its bytecode (a 180 KB script recompiles on every run, ~30 ms)
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
+import hintmap
+if __name__ == "__main__": sys.exit(hintmap.main())
